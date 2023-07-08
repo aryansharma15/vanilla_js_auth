@@ -4,6 +4,7 @@ body{
 
 .land-cont{
     background-color: #EEA47F;
+    padding-bottom: 60px;
 }
 
 
@@ -12,12 +13,12 @@ nav{
     justify-content: space-between;
 
     padding: 35px 60px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .nav-links{
     text-decoration: none;
-    color: #01539D;
+    color: #00427b;
     font-size: 20px;
     font-family: cursive;
     font-weight: 600;
@@ -34,3 +35,32 @@ nav{
     justify-content: space-evenly;
 }
 
+/* Nav ends */
+
+.head-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 80px;
+}
+
+.head-text{
+    width: 700px;
+    /* color: #01539D; */
+}
+
+.head-text h1{
+    font-size: 50px;
+    color: #00427b;
+    margin-bottom: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 66px;
+}
+
+.head-text p{
+    width: 600px;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+}
