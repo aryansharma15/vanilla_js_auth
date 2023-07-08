@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+.land-cont{
+    background-color: #EEA47F;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 35px 60px;
+    margin-bottom: 70px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #01539D;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+.nav-links:hover{
+    color: #ffffff;
+    transition: 200ms ease-in-out;
+}
+
+.mid-links{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
