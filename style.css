@@ -64,3 +64,42 @@ nav{
     line-height: 30px;
     text-align: center;
 }
+
+.head-btns{
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head-btns button{
+    border: 0px solid;
+    padding: 20px 80px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #083258;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px #00000043;
+
+    cursor: pointer;
+}
+
+.head-btn:hover{
+    
+}
+
+.head-btns button:active{
+    box-shadow: 0px 0px 0px;
+    transition: 130ms ease-in-out;
+}
+
+.reg-btn{
+    background-color: #2CD89A;
+    
+}
+
+.log-btn{
+    background-color: #9C9AFF;
+}
+
