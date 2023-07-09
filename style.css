@@ -22,11 +22,11 @@ nav{
     font-size: 20px;
     font-family: cursive;
     font-weight: 600;
+    transition: 150ms ease-in-out;
 }
 
 .nav-links:hover{
     color: #ffffff;
-    transition: 200ms ease-in-out;
 }
 
 .mid-links{
@@ -83,6 +83,7 @@ nav{
     box-shadow: 3px 3px 5px #00000043;
 
     cursor: pointer;
+    transition: 130ms ease-in-out;
 }
 
 .head-btn:hover{
@@ -91,7 +92,7 @@ nav{
 
 .head-btns button:active{
     box-shadow: 0px 0px 0px;
-    transition: 130ms ease-in-out;
+    
 }
 
 .reg-btn{
@@ -101,6 +102,36 @@ nav{
 
 .log-btn{
     background-color: #9C9AFF;
+}
+
+.mid-cont{
+    padding: 100px 80px;
+}
+
+.mc-1, .mc-2, .mc-3{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mc-1 img, .mc-2 img, .mc-3 img{
+    width: 600px;
+    box-shadow: 3px 3px 10px #00000043;
+    transition: 300ms ease-in-out;
+}
+
+.mc-1 img:hover,
+.mc-2 img:hover,
+.mc-3 img:hover {
+    box-shadow: 5px 5px 20px #00000081;
+}
+
+.mc-1 h3, .mc-2 h3, .mc-3 h3{
+    width: 600px;
+    color: #00427b;
+    font-size: 27px;
+    text-align: center;
 }
 
 
