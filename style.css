@@ -150,6 +150,27 @@ nav{
     text-shadow: 3px 3px 15px #00000043;
 }
 
+.our-users{
+    padding: 50px 80px;
+}
+
+.our-users h1{
+    text-align: center;
+}
+
+.users-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.card{
+    background-color: #083258;
+    padding: 30px 40px;
+
+    width: 500px;
+}
+
 
 
 
