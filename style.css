@@ -166,11 +166,11 @@ nav{
 
 .card{
     background-color: #083258;
-    padding: 30px 80px;
+    padding: 30px 60px;
     color: #FFFFFF;
     text-align: center;
 
-    width: 400px;
+    width: 500px;
     height: fit-content;
 }
 
@@ -181,7 +181,12 @@ nav{
 .user-bio{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
+}
+
+.user-bio p{
+    width: 310px;
 }
 
 
