@@ -194,8 +194,35 @@ footer{
     padding: 60px 80px;
     background-color: #00427b;
     color: #EEA47F;
+
+    padding-bottom: 30px;
 }
 
+.foot-cont{
+    display: flex;
+    width: 800px;
+}
+
+.foot-links{
+    margin-left: 100px;
+}
+
+.foot-links a{
+    color: #EEA47F;
+    text-decoration: none;
+}
+
+.foot-links ul{
+    list-style-type: none;
+}
+
+.cpr-line{
+    margin: auto;
+    width: 500px;
+    position: relative;
+    top: 25px;
+    
+}
 
 
 /* .btn-4 {
