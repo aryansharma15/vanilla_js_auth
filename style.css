@@ -152,6 +152,7 @@ nav{
 
 .our-users{
     padding: 50px 80px;
+    margin-bottom: 100px;
 }
 
 .our-users h1{
@@ -165,13 +166,13 @@ nav{
 }
 
 .card{
-    background-color: #083258;
+    background-color: #00215b46;
     padding: 30px 60px;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
 
     width: 500px;
-    height: fit-content;
+    
 }
 
 .card h3{
@@ -189,7 +190,11 @@ nav{
     width: 310px;
 }
 
-
+footer{
+    padding: 60px 80px;
+    background-color: #00427b;
+    color: #EEA47F;
+}
 
 
 
