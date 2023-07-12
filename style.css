@@ -224,6 +224,18 @@ footer{
     
 }
 
+.foot-sites{
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+
+.foot-sites img{
+    width: 24px;
+}
+
 
 /* .btn-4 {
     border: 1px solid;
