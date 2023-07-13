@@ -88,7 +88,9 @@ nav{
 
     cursor: pointer;
     transition: 130ms ease-in-out;
+    width: 230px;
 }
+
 
 
 .head-btns button:active{
@@ -234,6 +236,14 @@ footer{
 
 .foot-sites img{
     width: 24px;
+}
+
+/* REGISTER PAGE */
+
+
+.regis-cont{
+    background-color: #8eb3d3;
+    height: 100vh;
 }
 
 
