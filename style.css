@@ -241,7 +241,7 @@ footer{
 /* REGISTER PAGE */
 
 
-.regis-cont{
+.regis-cont, .login-cont{
     background-color: #8eb3d3;
     height: 100vh; 
     /* recheck */
