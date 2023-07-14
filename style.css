@@ -202,7 +202,11 @@ footer{
 
 .foot-cont{
     display: flex;
-    width: 1200px;
+    width: 1400px;
+}
+
+.foot-text{
+    width: 500px;
 }
 
 .foot-links{
@@ -216,6 +220,7 @@ footer{
 }
 
 .foot-links li{
+    font-size: 20px;
     margin-bottom: 25px;
     text-shadow: 3px 3px 15px #00000043;
 }
@@ -240,8 +245,14 @@ footer{
     
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 
+}
+
+.foot-sites img{
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #ffffff;
 }
 
 .foot-sites img{
@@ -251,9 +262,10 @@ footer{
 
 .link-sites{
     display: flex;
-    width: 800px;
-    margin-left: 300px;
+    width: 300px;
+    margin-left: 400px;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* REGISTER PAGE */
