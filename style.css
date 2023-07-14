@@ -21,7 +21,7 @@ nav{
     text-decoration: none;
     color: #00427b;
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
     transition: 150ms ease-in-out;
     text-shadow: 3px 3px 5px #00000043;
@@ -202,16 +202,26 @@ footer{
 
 .foot-cont{
     display: flex;
-    width: 800px;
+    width: 1200px;
 }
 
 .foot-links{
-    margin-left: 100px;
+    text-align: left;
 }
 
 .foot-links a{
     color: #EEA47F;
     text-decoration: none;
+    transition: 100ms ease-in-out;
+}
+
+.foot-links li{
+    margin-bottom: 25px;
+    text-shadow: 3px 3px 15px #00000043;
+}
+
+.foot-links a:hover{
+    color: #ffffff;
 }
 
 .foot-links ul{
@@ -236,6 +246,14 @@ footer{
 
 .foot-sites img{
     width: 24px;
+    margin-bottom: 20px;
+}
+
+.link-sites{
+    display: flex;
+    width: 800px;
+    margin-left: 300px;
+    justify-content: space-between;
 }
 
 /* REGISTER PAGE */
