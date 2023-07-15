@@ -27,18 +27,20 @@
 
         <div class="inpts-regis">
             <h1>Sign Up</h1>
-            <form action="get" class="reg-inp-form">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">  
+            <form class="reg-inp-form" id="reg-form">
+                <input id="reg-name" type="text" placeholder="Name" required>
+                <input id="reg-email" type="email" placeholder="Email" required>
+                <input id="reg-uname" type="text" placeholder="Username" required>
+                <input id="reg-pass" type="password" placeholder="Password" required>  
             </form>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </div>
 
     </div>
 
 
 
+<script src="script.js"></script>
 </body>
+
 </html>
