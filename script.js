@@ -10,3 +10,28 @@ regForm.addEventListener("submit", function (event) {
 
 	registerUser(name, email, uname, password);
 });
+
+function registerUser(name, email, uname, password) {
+	const userData = {
+		name: name,
+		email: email,
+		username: uname,
+		password: password,
+	};
+
+	fetch("", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(userData),
+	})
+		.then((response) => response.json())
+		.then((data) => {
+			console.log(data);
+		})
+
+		.catch((error) => {
+			console.error("Error:", error);
+		});
+}
