@@ -1,4 +1,8 @@
 const regForm = document.getElementById("reg-form");
+const loginForm = document.getElementById("login-form");
+
+//
+// Implementing registering functionality for new users
 
 regForm.addEventListener("submit", function (event) {
 	event.preventDefault();
@@ -35,3 +39,14 @@ function registerUser(name, email, uname, password) {
 			console.error("Error:", error);
 		});
 }
+
+//
+// Implementing login functionality
+
+loginForm.addEventListener("submit", function (event) {
+	event.preventDefault();
+	const uname = document.getElementById("login-uname");
+	const pass = document.getElementById("login-pass");
+
+	loginUser(uname, pass);
+});
