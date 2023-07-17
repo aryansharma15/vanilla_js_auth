@@ -50,3 +50,25 @@ loginForm.addEventListener("submit", function (event) {
 
 	loginUser(uname, pass);
 });
+
+function loginUser(username, password) {
+	const userData = {
+		username: username,
+		password: password,
+	};
+
+	fetch("", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(userData),
+	})
+		.then((respone) => response.json())
+		.then((data) => {
+			console.log(data);
+		})
+		.catch((error) => {
+			console.error("Error: ", error);
+		});
+}
