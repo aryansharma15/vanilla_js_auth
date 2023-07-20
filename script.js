@@ -64,11 +64,19 @@ function loginUser(username, password) {
 		},
 		body: JSON.stringify(userData),
 	})
-		.then((respone) => response.json())
+		.then((response) => response.json())
 		.then((data) => {
 			console.log(data);
 		})
 		.catch((error) => {
 			console.error("Error: ", error);
 		});
+}
+
+// Logging out method
+
+function logoutUser() {
+	localStorage.removeItem("jwtToken");
+
+	window.location.href = "/regis.html";
 }
