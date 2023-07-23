@@ -8,6 +8,7 @@ const loginForm = document.getElementById("login-form");
 // fetching the auth_config file
 const fetchAuthConfig = () => fetch("/auth_config.json");
 
+// downloads the configuration file and initialize the "auth0Client"
 const configureClient = async () => {
 	const response = await fetchAuthConfig();
 	const config = await response.json();
@@ -15,6 +16,10 @@ const configureClient = async () => {
 		domain: config.domain,
 		clientId: config.clientId,
 	});
+};
+
+window.onload = async () => {
+	await configureClient();
 };
 
 //
