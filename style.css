@@ -190,6 +190,11 @@ nav{
 
 .user-bio p{
     width: 310px;
+    height: 150px;
+    /* margin: auto; */
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 footer{
