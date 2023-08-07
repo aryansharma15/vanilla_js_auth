@@ -6,13 +6,14 @@
     <title>Welcome "User"</title>
 
     <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
-    <div>
+    <div class="dashboard">
         <div class="land-cont">
             <nav>
                 <a class="logo" href="">
-                    <img src="./assets/diamond.png" alt="logo">
+                    <img src="../assets/diamond.png" alt="logo">
                 </a>
             
             
@@ -22,7 +23,9 @@
                     <a class="nav-links" href="/">Pricing</a>
                 </div>
                 <div class="nav-link-btn">
-                    <a class="nav-links" href="" onclick="">Logout</a>
+                    <a class="nav-links"  onclick="">
+                        <button id="logout-btn">Logout</button>
+                    </a>
                 </div>
             </nav>
             
@@ -41,7 +44,9 @@
             </div>
     
             <div class="user-cont">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                <h2>Welcome <span id="dash-username">User Name</span>!</h2>
+                <p>Email: <span id="dash-email">User Email</span></p>
+                <button id="logout-btn">Logout</button>
                 <!-- accordion -->
     
             </div>
@@ -54,7 +59,7 @@
         <div class="foot-cont">
             <div class="foot-text">
                 <div>
-                    <img src="assets/diamond.png" alt="Logo">
+                    <img src="../assets/diamond.png" alt="Logo">
                     <h2>UAT</h2>
                 </div>
     
@@ -80,16 +85,16 @@
     
                 <div class="foot-sites">
                     <a href="https://www.facebook.com/">
-                        <img src="assets/facebook-app-symbol.png" alt="Facebook">
+                        <img src="../assets/facebook-app-symbol.png" alt="Facebook">
                     </a>
                     <a href="https://www.youtube.com">
-                        <img src="assets/youtube.png" alt="Youtube">
+                        <img src="../assets/youtube.png" alt="Youtube">
                     </a>
                     <a href="https://twitter.com">
-                        <img src="assets/twitter.png" alt="Twitter">
+                        <img src="../assets/twitter.png" alt="Twitter">
                     </a>
                     <a href="https://www.linkedin.com">
-                        <img src="assets/linkedin.png" alt="LinkedIN">
+                        <img src="../assets/linkedin.png" alt="LinkedIN">
                     </a>
                 </div>
             </div>
@@ -101,5 +106,14 @@
         </div>
     
     </footer>
+
+    <script>
+        const username = document.getElementById("dash-username");
+        const userEmail = document.getElementById("dash-email");
+
+        username.textContent = "John Doe";
+        userEmail.textContent = "john@example.com"
+
+    </script>
 </body>
 </html>

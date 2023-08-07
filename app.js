@@ -73,17 +73,32 @@ app.get("/callback", async (req, res) => {
 	}
 });
 
-app.get("/profile", (req, res) => {
+// Middleware
+function requireAuth(req, res, next) {
+	if (req.session.accessToken && req.session.idToken) {
+		next(); //to state that user is authenticated, move to next middleware/route
+	} else {
+		res.redirect("/login");
+	}
+}
+
+// protected route
+app.get("/dashboard", (req, res) => {
 	if (req.session.accessToken && req.session.idToken) {
 		const username = req.session.idTokenPayload.name;
-		const profileHtml = __dirname + "/public/profile.html";
-		fs.readFile(profileHtml, "utf8", (err, data) => {
+		const userEmail = req.session.idTokenPayload.email;
+		const dashHtml = __dirname + "/public/dashboard.html";
+
+		fs.readFile(dashHtml, "utf8", (err, data) => {
 			if (err) {
 				console.log(err);
-				res.status(500).send("Error occurred while reading profile.html");
+				res.status(500).send("Error occurred while reading dashboard.html");
 			} else {
-				const modifiedProfileHtml = data.replace(document.getElementById("login-uname"), username);
-				res.send(modifiedProfileHtml);
+				const modifiedDashHtml = data
+					.replace(document.getElementById("dash-username"), username)
+					.replace(document.getElementById("dash-email"), userEmail);
+
+				res.send(modifiedDashHtml);
 			}
 		});
 	} else {
