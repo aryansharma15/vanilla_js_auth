@@ -7,6 +7,9 @@ const fs = require("fs");
 
 dotenv.config();
 
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
 // generating the secret session string
 const generateString = (length) => {
 	const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -41,7 +44,8 @@ const auth0Client = new auth0.AuthenticationClient({
 });
 
 app.get("/", (req, res) => {
-	res.sendFile(__dirname + "/public/index.html");
+	// res.sendFile(__dirname + "/public/index.html");
+	res.render("index");
 });
 
 app.get("/login", (req, res) => {
@@ -103,6 +107,28 @@ app.get("/dashboard", (req, res) => {
 		});
 	} else {
 		res.redirect("/login");
+	}
+});
+
+// registration route
+app.get("/register", (req, res) => {
+	// res.sendFile(__dirname + "/public/regis.html");
+	res.render("regis");
+});
+
+// handling user registration
+app.post("/register", async (req, res) => {
+	const { name, email, username, password } = req.body;
+
+	try {
+		// using auth0 api or self method
+		// register logic
+
+		// redirecting to login after registration
+		res.redirect("/login");
+	} catch (error) {
+		console.error(error);
+		res.status(500).send("Error occurred during registration");
 	}
 });
 
