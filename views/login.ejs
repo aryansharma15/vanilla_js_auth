@@ -28,6 +28,14 @@
 
         <div class="inpts-regis">
             <h1>Login</h1>
+            <% if (errorMessage) { %>
+                <p style="color: red;">
+                    <%= errorMessage %>
+                </p>
+                <% } %>
+
+            
+
             <form class="reg-inp-form" id="login-form">
 
                 <input id="login-uname" type="text" placeholder="Username" required>
